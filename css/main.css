@@ -1,0 +1,60 @@
+/*main.css*/
+*{/*very basic browser default stlesheet.*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*flex container (does not need to be body! just used in this exmaple.)*/
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*flex items.*/
+.flex-item{
+    display: block;
+    width: 100%;
+    height: 460px;
+}
+.item-1{
+    background: #5d8aa8;
+
+}
+.item-2{
+    background: #ffbf00;
+    
+}
+.item-3{
+    background: #e32636;
+    
+}
+.item-4{
+    background: #a4c639;
+    
+}
+.item-5{
+    background: #cd9575;
+    
+}
+.item-6{
+    background: #87a96b;
+    
+}
+@media screen and (min-width: 768px){
+    .item-2,
+    .item-3,
+    .item-5,
+    .item-6 { 
+        width: 50%;
+    }
+}
+/*desktop*/
+@media screen and (min-width: 1200px){
+    .item-2,
+    .item-3,
+    .item-4 { 
+        width: calc(100%/3);
+    }
+
+}
